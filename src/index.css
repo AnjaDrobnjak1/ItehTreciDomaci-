@@ -48,3 +48,12 @@ label {
   width: 300px;
   margin-left: 20px;
 }
+
+.podaci{
+  margin-top: 50px;
+  color: white;
+}
+
+.podaci h3 {
+  font-size: 40px;
+}
