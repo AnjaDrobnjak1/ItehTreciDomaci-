@@ -1,3 +1,4 @@
+import PrijavaSF from "../komponente/PrijavaSF";
 
 function HomeStrana() {
 
@@ -7,7 +8,7 @@ function HomeStrana() {
     return (
         <div>
 
-
+            <PrijavaSF tekst={tekst} />
 
         </div>
     )
