@@ -1,3 +1,4 @@
+import { useState } from 'react'
 
 function PrijavaSForma() {
 
@@ -8,7 +9,9 @@ function PrijavaSForma() {
         broj_telefona: '',
     });
 
-
+    function prijaviSe(e) {
+        e.preventDefault();
+    }
 
 
     return (
@@ -16,28 +19,28 @@ function PrijavaSForma() {
 
             <form onSubmit={prijaviSe} id="prijavi-se-forma">
 
-                <div>
+                <div className='sf'>
                     <label>Ime: </label>
                     <input type="text" className="form-control" value={prijava.ime} onChange={e => setPrijava({ ...prijava, ime: e.target.value })} />
                 </div>
 
-                <div>
+                <div className='sf'>
                     <label>Prezime: </label>
                     <input type="text" className="form-control" value={prijava.prezime} onChange={e => setPrijava({ ...prijava, prezime: e.target.value })} />
                 </div>
 
-                <div>
-                    <label>Prezime: </label>
-                    <input type="text" className="form-control" value={prijava.email} onChange={e => setPrijava({ ...prijava, email: e.target.value })} />
+                <div className='sf'>
+                    <label>Email: </label>
+                    <input type="email" className="form-control" value={prijava.email} onChange={e => setPrijava({ ...prijava, email: e.target.value })} />
                 </div>
 
-                <div>
-                    <label>Prezime: </label>
+                <div className='sf'>
+                    <label>Broj telefona: </label>
                     <input type="text" className="form-control" value={prijava.broj_telefona} onChange={e => setPrijava({ ...prijava, broj_telefona: e.target.value })} />
                 </div>
 
 
-                <button type="submit" className="btn btn-primary">Prijavi se</button>
+                <button type="submit" className="btn btn-primary" id='prvbtn'>Prijavi se</button>
             </form>
 
         </div>

@@ -21,3 +21,30 @@ code {
 h1 {
   color: white;
 }
+
+label {
+  color: white;
+  font-size: 25px;
+}
+
+#prijavi-se-forma{
+  margin-top: 50px;
+  width: 900px;
+  margin-left: 510px;
+}
+
+#sf-pr{
+  margin-top: 20px;
+  font-size: 55px;
+}
+
+.sf{
+  margin-bottom: 20px;
+}
+
+#prvbtn{
+  margin-top: 10px;
+  font-size: 25px;
+  width: 300px;
+  margin-left: 20px;
+}
