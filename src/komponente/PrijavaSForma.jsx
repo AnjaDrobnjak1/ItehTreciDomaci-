@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function PrijavaSForma() {
+function PrijavaSForma(props) {
 
     const [prijava, setPrijava] = useState({
         ime: '',
@@ -9,15 +9,13 @@ function PrijavaSForma() {
         broj_telefona: '',
     });
 
-    function prijaviSe(e) {
-        e.preventDefault();
-    }
+
 
 
     return (
         <div>
 
-            <form onSubmit={prijaviSe} id="prijavi-se-forma">
+            <form onSubmit={(e) => props.fja(e, prijava)} id="prijavi-se-forma">
 
                 <div className='sf'>
                     <label>Ime: </label>
